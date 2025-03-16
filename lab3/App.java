@@ -19,11 +19,9 @@ public class App {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
-        // Предустановленные пользователи
         Admin admin = new Admin("admin", "1");
         User user = new User("user", "user12345");
 
-        // Авторизация
         System.out.print("Введите логин: ");
         String username = scanner.next();
         System.out.print("Введите пароль: ");
@@ -44,7 +42,6 @@ public class App {
 
         System.out.println("Добро пожаловать, " + username + "!");
         
-        // Создаем кинотеатр, зал и фильм
         Cinema cinema = new Cinema("КиноПарк");
         Hall hall = new Hall("Зал 1", 5, 5);
         cinema.addHall(hall);
@@ -62,7 +59,6 @@ public class App {
             Film newFilm = new Film(newMovieTitle, duration);
             adminUser.addMovie(cinema, newFilm);
         } else {
-            // Запускаем консольный интерфейс пользователя
             Console.start(session);
         }
     }

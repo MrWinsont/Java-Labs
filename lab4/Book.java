@@ -34,7 +34,7 @@ public class Book {
         return title == book.GetTitle() && author == book.GetAuthor() && year == book.GetYear();
     }
 
-    public int HashCode() {
+    public int hashCode() {
         int result = 0;
         result += year;
         result =+ title.hashCode();

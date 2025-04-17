@@ -23,7 +23,7 @@ public class Book {
         return year;
     }
 
-    public String ToString(){
+    public String toString(){
         return "Book: " + title + ", Author: " + author + ", Year: " + year; 
     }
 

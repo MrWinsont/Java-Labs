@@ -61,7 +61,7 @@ public class Library {
 
     public void PrintAllBooks() {
         for (Book book : books) {
-            System.out.println(book.ToString());
+            System.out.println(book.toString());
         }
     }
 

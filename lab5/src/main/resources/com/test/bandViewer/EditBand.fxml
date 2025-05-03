@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox spacing="10" xmlns:fx="http://javafx.com/fxml" fx:controller="com.test.bandViewer.EditBandController">
+    <Label text="Название группы" TextAlignment = "LEFT"/>
+    <TextField fx:id="nameField"/>
+
+    <Label text="Страна" TextAlignment = "LEFT"/>
+    <TextField fx:id="countryField"/>
+
+    <Label text="Год создания" TextAlignment = "LEFT"/>
+    <TextField fx:id="yearField"/>
+
+    <Label text="Информация" TextAlignment = "LEFT"/>
+    <TextField fx:id="infoField"/>
+    
+    <HBox spacing="10" alignment="CENTER">
+        <Button text="Сохранить" onAction="#onSave"/>
+        <Button text="Отмена" onAction="#onCancel"/>
+    </HBox>
+</VBox>
